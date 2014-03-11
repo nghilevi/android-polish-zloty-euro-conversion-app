@@ -16,16 +16,24 @@
         android:id="@+id/polishCurrency"
         android:layout_alignParentTop="true"
         android:layout_marginTop="173dp"
-        android:hint="Enter the amount to be converted" />
+        android:hint="Enter here"
+        android:editable="true"
+        android:textSize="40dp"
+        android:textIsSelectable="true"
+        android:layout_centerInParent="true" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convert"
+        android:text="="
         android:id="@+id/convert"
         android:layout_below="@+id/polishCurrency"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="40dp"
+        android:layout_alignRight="@+id/polishCurrency"
+        android:layout_alignEnd="@+id/polishCurrency"
+        android:layout_centerInParent="true" />
 
     <TextView
         android:layout_width="match_parent"
@@ -33,7 +41,38 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/result"
         android:layout_below="@+id/convert"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="40dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PLN"
+        android:id="@+id/textView"
+        android:textSize="40dp"
+        android:layout_above="@+id/convert"
+        android:layout_gravity="right"
+        android:layout_alignRight="@+id/polishCurrency"
+        android:layout_alignEnd="@+id/polishCurrency"
+        android:width="100dp"
+        android:textAlignment="textEnd"
+        android:paddingEnd="0dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EUR"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/result"
+        android:layout_alignRight="@+id/result"
+        android:layout_alignEnd="@+id/result"
+        android:textSize="40dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_centerInParent="true" />
+
 
 </RelativeLayout>
