@@ -43,7 +43,6 @@ public class MainActivity extends ActionBarActivity{
 
                 //new ProgressTask(MainActivity.this).execute();
 
-
                 eurDoubleValue= plnDoubleValue *plnToEurRate;
 
                 plnEditText.setText(Double.toString(plnDoubleValue));
